@@ -1,0 +1,8 @@
+name: ${name}
+version: ${version}
+main: es.inventoriesMinemu.InventoriesMinemu
+api-version: '1.21'
+authors: [ Piratemajo ]
+folia-supported: true
+load: STARTUP
+softdepend: [ProtocolLib]
