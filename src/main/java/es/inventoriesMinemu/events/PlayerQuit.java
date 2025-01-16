@@ -23,7 +23,7 @@ public class PlayerQuit implements Listener {
     public PlayerQuit(InventoriesMinemu inv) {
         this.inv = inv;
     }
-
+    @Deprecated
     @EventHandler
     public void onDisconnect(final PlayerQuitEvent event) {
         if (InventoriesMinemu.isDisabling == false) {

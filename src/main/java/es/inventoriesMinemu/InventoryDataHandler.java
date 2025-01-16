@@ -9,7 +9,6 @@ package es.inventoriesMinemu;
  * */
 
 
-// TODO cambiado
 import java.util.HashSet;
 import java.util.Set;
 
@@ -43,7 +42,7 @@ public class InventoryDataHandler {
         playersInSync.remove(p);
         playersDisconnectSave.remove(p);
     }
-
+    @Deprecated
     public void setPlayerData(final Player p, DatabaseInventoryData data, InventorySyncData syncData, boolean cancelTask) {
         if (playersInSync.contains(p) == false) {
             //Inventory and Armor sync for lower mc versions then 1.9
@@ -60,6 +59,7 @@ public class InventoryDataHandler {
                     setInventoryNew(p, data, syncData);
                 }
             }
+
             pd.getInvMysqlInterface().setSyncStatus(p, "false");
             Bukkit.getScheduler().runTaskLaterAsynchronously(pd, new Runnable() {
 

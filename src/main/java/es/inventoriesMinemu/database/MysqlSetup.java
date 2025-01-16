@@ -205,7 +205,7 @@ public class MysqlSetup {
             }
         }
     }
-
+    @Deprecated
     private void databaseMaintenanceTask() {
         if (eco.getConfigHandler().getBoolean("database.maintenance.enabled") == true) {
             Bukkit.getScheduler().runTaskLaterAsynchronously(eco, new Runnable() {

@@ -26,6 +26,7 @@ public class PlayerJoin implements Listener {
         this.inv = inv;
     }
 
+    @SuppressWarnings("deprecation")
     @EventHandler
     public void onLogin(final PlayerJoinEvent event) {
         if (InventoriesMinemu.isDisabling == false) {

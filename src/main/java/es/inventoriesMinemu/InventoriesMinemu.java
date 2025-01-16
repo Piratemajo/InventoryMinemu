@@ -58,7 +58,7 @@ public class InventoriesMinemu extends JavaPlugin {
         pm.registerEvents(new InventoryClick(this), this);
         log.info(pluginName + " loaded successfully!");
     }
-
+    @Deprecated
     @Override
     public void onDisable() {
         isDisabling = true;

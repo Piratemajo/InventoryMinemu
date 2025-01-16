@@ -28,7 +28,7 @@ public class InventorySyncTask extends BukkitRunnable {
         this.p = player;
         this.syncD = syncData;
     }
-
+    @Deprecated
     @Override
     public void run() {
         if (inProgress == false) {
